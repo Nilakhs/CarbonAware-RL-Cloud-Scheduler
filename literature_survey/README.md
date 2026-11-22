@@ -22,12 +22,12 @@ The survey covers a target of **30 core papers** (published between January 2021
 |:---:|:---|:---:|:---:|:---:|
 | **G1** | Carbon-Aware Scheduling **without** RL (Heuristics, Optimization, ILP) | **7** | 7 Confirmed Included | **COMPLETE** (P01–P07 extracted) |
 | **G2** | RL / DRL for Cloud Scheduling with **Energy, Cost, or QoS** Objectives | **7** | 7 Confirmed Included | **COMPLETE** (P08–P14 extracted) |
-| **G3** | RL / DRL for **Carbon-Aware** Cloud Workload Scheduling (Core Focus) | **10** | 10 Confirmed Included | **IN PROGRESS** (1/10 extracted: P15; P16–P24 planned) |
+| **G3** | RL / DRL for **Carbon-Aware** Cloud Workload Scheduling (Core Focus) | **10** | 10 Confirmed Included | **IN PROGRESS** (2/10 extracted: P15, P16; P17–P24 planned) |
 | **G4** | Carbon-Intensity **Data and Forecasting** (Inputs for schedulers) | **3** | 3 Confirmed Included | **PLANNED** (P25–P27) |
 | **G5** | **Simulators, Datasets, and Workload Traces** for Cloud Scheduling | **3** | 3 Confirmed Included | **PLANNED** (P28–P30) |
 | **F** | **Foundational Literature** (Seminal pre-2021 RL/cloud papers, max 4) | **Up to 4** | 4 Confirmed Included | **COMPLETE** (F01 DeepRM, F02 Decima, F03 Borg, F04 Wang et al.) |
 | **S** | **Comprehensive Survey / Review Literature** | **2–4** | 3 Confirmed Included | **COMPLETE** (S01, S02, S03) |
-| | **Total Confirmed Inventory** | **30 Core Target** | **37 Confirmed Included Papers** | **15 Core + 1 Foundational (F04) Extracted** |
+| | **Total Confirmed Inventory** | **30 Core Target** | **37 Confirmed Included Papers** | **16 Core + 1 Foundational (F04) Extracted** |
 
 ---
 
@@ -66,4 +66,5 @@ The survey covers a target of **30 core papers** (published between January 2021
 - [`P13_PADQN_Data_Center_Energy_Efficiency.md`](./notes/P13_PADQN_Data_Center_Energy_Efficiency.md): Ran et al., *IEEE TSC '23* (G2: DeepEE PADQN parameterized action space for IT and cooling).
 - [`P14_Federated_DRL_Cloud_Edge_Scheduling.md`](./notes/P14_Federated_DRL_Cloud_Edge_Scheduling.md): Zhu et al., *IEEE TCC '23* (G2: Federated DRL for distributed privacy-preserving cloud-edge scheduling).
 - [`P15_Sustainable_AIGC_Scheduling_MARL.md`](./notes/P15_Sustainable_AIGC_Scheduling_MARL.md): Zhang et al., *IEEE GLOBECOM '23* (G3: Multi-Agent Soft Actor-Critic for geo-distributed AIGC scheduling; +28.6% utility, +15.6% GPU throughput).
+- [`P16_MADRL_Renewable_Workflow_Scheduling.md`](./notes/P16_MADRL_Renewable_Workflow_Scheduling.md): Jayanetti et al., *IEEE TPDS '24* (G3: Multi-agent DRL for renewable energy-aware workflow DAG scheduling on distributed cloud DCs; up to 47% energy reduction).
 - [`F04_Wang_DRL_Green_Task_Scheduling.md`](./notes/F04_Wang_DRL_Green_Task_Scheduling.md): Wang et al., *IEEE TCC '20* (Foundational: DRL green task scheduling under uncertainty).

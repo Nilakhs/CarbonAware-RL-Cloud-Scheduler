@@ -1,7 +1,7 @@
 # Carbon-Aware Reinforcement Learning (RL) Scheduler for Dynamic Cloud Workloads
 
 [![Survey Standard](https://img.shields.io/badge/Methodology-Kitchenham%20%2F%20PRISMA%202020-blue.svg)](#8-systematic-literature-survey-methodology)
-[![Progress](https://img.shields.io/badge/SLR%20Progress-15%2F30%20Core%20Papers-orange.svg)](#10-current-research-progress)
+[![Progress](https://img.shields.io/badge/SLR%20Progress-16%2F30%20Core%20Papers-orange.svg)](#10-current-research-progress)
 [![Group Status](https://img.shields.io/badge/Status-G1%20%26%20G2%20Complete%20%7C%20G3%20In%20Progress-brightgreen.svg)](#9-five-literature-groups)
 [![Status](https://img.shields.io/badge/Project%20Stage-Literature%20Review%20%26%20Scoping-yellow.svg)](#10-current-research-progress)
 
@@ -119,7 +119,7 @@ This project strictly follows established guidelines for systematic literature r
 |:---:|:---|:---:|:---:|:---|
 | **G1** | Carbon-Aware Scheduling **without** RL | 7 | **COMPLETE (7/7 Confirmed)** | *Let's Wait Awhile* (P01), Google Fleet (P02), *Carbon Explorer* (P03), *Ecovisor* (P04), *CarbonScaler* (P05), *GreenCourier* (P06), *FTL Meta-Algorithm* (P07) |
 | **G2** | RL / DRL for Cloud Energy, Cost, and QoS | 7 | **COMPLETE (7/7)** | *BayesDDQN* (P08), *GNN-PPO Workflow* (P09), *DRAW* (P10), *Actor-Critic* (P11), *ADVMC* (P12), *DeepEE PADQN* (P13), *Federated DRL* (P14) |
-| **G3** | RL / DRL for **Carbon-Aware** Scheduling (Core) | 10 | **IN PROGRESS (1/10 Extracted)** | Core focus: P15–P24 covering multi-agent, actor-critic, and hierarchical carbon schedulers (P15 extracted) |
+| **G3** | RL / DRL for **Carbon-Aware** Scheduling (Core) | 10 | **IN PROGRESS (2/10 Extracted)** | Core focus: P15–P24 covering multi-agent, actor-critic, and hierarchical carbon schedulers (P15, P16 extracted) |
 | **G4** | Carbon-Intensity Data and Forecasting | 3 | **PLANNED (3 Confirmed)** | P25 (*CarbonCast*), P26 (*DACF*), P27 (*HotCarbon '24* conformal prediction) |
 | **G5** | Simulators, Datasets, and Workload Traces | 3 | **PLANNED (3 Confirmed)** | P28 (*SustainGym*), P29 (*Vessim*), P30 (*Alibaba 2021 trace*) |
 | **F** | Foundational Baseline Literature (Pre-2021) | Max 4 | **COMPLETE (4/4 Confirmed)** | *DeepRM* (F01), *Decima* (F02), *Borg Trace* (F03), *Wang et al. DRL-Green* (F04) |
@@ -131,21 +131,21 @@ This project strictly follows established guidelines for systematic literature r
 
 ```text
 Systematic Literature Review Progress:
-[████████████████████░░░░░░░░░░░░] 50% Core Target (15/30 Core + 1 Foundational Extracted)
+[█████████████████████░░░░░░░░░░░] 53% Core Target (16/30 Core + 1 Foundational Extracted)
 
 G1: Non-RL Carbon Schedulers   [████████████████████] 100% (7/7 extracted: P01–P07)
 G2: RL for Energy/Cost/QoS     [████████████████████] 100% (7/7 extracted: P08–P14)
-G3: RL for Carbon Schedulers   [██░░░░░░░░░░░░░░░░░░]  10% (1/10 extracted: P15; Target: P15–P24)
+G3: RL for Carbon Schedulers   [████░░░░░░░░░░░░░░░░]  20% (2/10 extracted: P15, P16; Target: P15–P24)
 G4: Data and Forecasting       [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers: P25–P27)
 G5: Simulators and Traces      [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers: P28–P30)
 ```
 
 - **Completed Deliverables:**
   - Full SLR protocol, search log, retrieval log (`retrieval_log.csv`), and screening logs mathematically reconciled.
-  - Standardized paper extraction notes for `P01` through `P15` and foundational paper `F04`.
+  - Standardized paper extraction notes for `P01` through `P16` and foundational paper `F04`.
   - Comprehensive metadata audit verifying DOIs, proceedings pagination, and author rosters.
   - Pre-implementation research scoping documents (`problem_statement.md`, `existing_approaches.md`, `candidate_research_gaps.md`).
-- **Next Milestone:** Controlled extraction of Group G3 (`P16`–`P24`, Core Carbon-Aware RL Schedulers).
+- **Next Milestone:** Controlled extraction of Group G3 (`P17`–`P24`, Core Carbon-Aware RL Schedulers).
 
 ---
 
@@ -180,6 +180,7 @@ CarbonAware-RL-Cloud-Scheduler/
 │   │   ├── ...
 │   │   ├── P14_Federated_DRL_Cloud_Edge_Scheduling.md
 │   │   ├── P15_Sustainable_AIGC_Scheduling_MARL.md
+│   │   ├── P16_MADRL_Renewable_Workflow_Scheduling.md
 │   │   └── F04_Wang_DRL_Green_Task_Scheduling.md
 │   │
 │   ├── grouped_papers/                # Cross-paper comparative tables per group (G1–G5)
