@@ -9,35 +9,33 @@
 
 ## Executive Summary of Audit
 
-In accordance with Phase 2.5 instructions and the Stage B research-integrity protocol, a rigorous audit of all candidate, foundational, and survey papers was conducted. This audit cross-checked official publisher landing pages, Digital Object Identifiers (DOIs), full author rosters, publication dates, peer-review statuses, full-text accessibility, and exact group fitness for all screened candidate records.
+In accordance with Phase 2.5 instructions and the Stage B research-integrity protocol, a rigorous audit of all candidate, foundational, and survey papers was conducted. This audit cross-checked official publisher landing pages, Digital Object Identifiers (DOIs), full author rosters, publication dates, peer-review statuses, full-text accessibility, exact group fitness, and retrieval traceability for all screened candidate records.
 
 ### Key Audit & Reconciliation Outcomes:
-1. **P10 Reclassification & Foundational Quota:**
+1. **P10 Reclassification & Replacement Approval:**
    - **Wang et al. (2020):** Archival publication verified as *IEEE Transactions on Cloud Computing*, Vol. 8, No. 2, pp. 322–336, April–June 2020. Because this publication date falls prior to the January 2021 core window, the paper was formally reclassified as **Foundational Paper F04**, completing the 4-paper foundational quota (`F01`–`F04`).
-   - **Group G2 Core Slot P10:** Designated for peer-reviewed candidate replacement **CAND-10b (Chen et al., IEEE TCC 2023 / DRAW)**. This candidate replacement is currently held in **pending status** awaiting explicit user review and approval before formal inclusion and extraction.
-2. **Reconciliation of Included-Paper Inventory vs. Provisional Screening Outcome:**
-   - **Current Confirmed Included Inventory:** **36 papers** (29 Core [`P01`–`P09`, `P11`–`P30`] + 4 Foundational [`F01`–`F04`] + 3 Surveys [`S01`–`S03`]).
-   - **Pending Candidate Replacement:** **1 paper (`P10` / `CAND-10b`)**, preserving traceability without prematurely declaring it approved.
-   - **Provisional Screening Outcome (Upon Approval):** **37 papers** (30 Core [`P01`–`P30`] + 4 Foundational [`F01`–`F04`] + 3 Surveys [`S01`–`S03`]).
+   - **Group G2 Core Slot P10:** Peer-reviewed candidate replacement **CAND-10b (Chen et al., IEEE TCC 2023 / DRAW)** was reviewed and formally approved as **P10**, completing the 7 core papers in Group G2.
+2. **Reconciliation of Confirmed Included-Paper Inventory:**
+   - **Confirmed Included Papers:** **37 papers** (30 Core [`P01`–`P30`] + 4 Foundational [`F01`–`F04`] + 3 Surveys [`S01`–`S03`]).
+   - Every candidate record has a 1-to-1 mapping across `papers_master.csv`, `screening_log.csv`, `verification_log.csv`, `retrieval_log.csv`, and `references.bib`.
 3. **PRISMA 2020 Flow Mathematical Reconciliation & Retrieval Log:**
    - Database queries returned 1,704 hits, and citation tracking added 43 leads (1,747 total search engine hits indexed across SCH-01 to SCH-10).
-   - From these hits, exactly 57 candidate records were retrieved for formal screening and enumerated in [`literature_survey/retrieval_log.csv`](retrieval_log.csv) (`RET-01` to `RET-57`).
+   - From these hits, exactly 57 candidate records were retrieved for formal screening and enumerated in [`literature_survey/retrieval_log.csv`](retrieval_log.csv) (`RET-01` to `RET-57`), which serves as the canonical source of truth for all search retrieval distributions.
    - 15 cross-database and preprint-versus-published duplicates were removed (`DUP-01` to `DUP-15`).
    - 42 unique records were screened at Stage 1 (`CAND-01` to `CAND-41`, plus `CAND-10b`).
    - 5 domain/scope mismatches were excluded at Stage 1 (`CAND-37` to `CAND-41`).
    - 37 full-text articles were assessed at Stage 2, with 0 full-text exclusions.
-   - From these 37 assessed records, **36 papers are confirmed as included**, and **1 candidate replacement (`P10` / `CAND-10b`)** is pending final user authorization.
-4. **Candidate P10 (DRAW) Evaluation Verification:**
+   - **37 papers are confirmed as included** in the systematic literature survey.
+4. **P10 (DRAW) Evaluation Verification:**
    - Full text was verified on IEEE Xplore.
-   - **Correction of Evaluation Claim:** The evaluation is conducted in a **trace-driven discrete-event cloud simulation testbed** using empirical request logs from the **WorldCup website access dataset** (Sec. V-A, pp. 1878–1879), rather than a live multi-tenant production cluster deployment.
+   - **Verified Evaluation Setup:** The evaluation is conducted in a **trace-driven discrete-event cloud simulation testbed** using empirical request logs from the **WorldCup website access dataset** (Sec. V-A, pp. 1878–1879), rather than a live multi-tenant production cluster deployment.
 
 ---
 
 ## 1. Candidate Records Screened
 
 A total of **42 unique candidate records** underwent formal Stage 1 and Stage 2 screening:
-- **29 Confirmed Core Survey Papers** (`P01`–`P09`, `P11`–`P30`).
-- **1 Pending Candidate Replacement Core Paper** (`P10` / `CAND-10b`, DRAW).
+- **30 Core Survey Papers** (`P01`–`P30`).
 - **4 Foundational Papers** (`F01` DeepRM 2016, `F02` Decima 2019, `F03` Borg 2020, `F04` Wang et al. 2020).
 - **3 Comprehensive Survey Papers** (`S01` Container Orchestration, `S02` HUNTER, `S03` Spatio-temporal edge-cloud review).
 - **5 Excluded Records** (`CAND-37` to `CAND-41`, audited to confirm grounds for exclusion).
@@ -54,7 +52,7 @@ For every candidate, the official publisher repository (ACM Digital Library, IEE
 | Paper ID | Original Record in Checkpoint | Corrected Record | Justification & Evidence Source |
 |:---|:---|:---|:---|
 | **P10 / F04** | Listed as 2021 core paper in checkpoint | **Paper ID:** F04 (Foundational Literature)<br>**Authors:** Zhibo Wang, Yanqi Zhang, Lin Chen, Keqin Li<br>**Title:** *A Deep Reinforcement Learning Approach for Green Task Scheduling in Cloud Computing With Energy and Cost Constraints*<br>**Venue:** *IEEE Transactions on Cloud Computing*, Vol. 8, No. 2, pp. 322–336, April–June 2020<br>**DOI:** 10.1109/TCC.2019.2910078 | Archival print publication date verified as **April–June 2020** (published online early access in March 2019). Reclassified from P10 to Foundational Paper **F04**, filling the 4th foundational slot permitted by the methodology. Group G2 slot P10 opened for candidate replacement CAND-10b. |
-| **P10 (Candidate)** | N/A (Discovered as G2 replacement) | **Candidate ID:** CAND-10b (P10 candidate replacement)<br>**Authors:** Xing Chen, Lijian Yang, Zheyi Chen, Geyong Min, Xianghan Zheng, Chunming Rong<br>**Title:** *Resource Allocation With Workload-Time Windows for Cloud-Based Software Services: A Deep Reinforcement Learning Approach*<br>**Venue:** *IEEE Transactions on Cloud Computing*, Vol. 11, No. 2, pp. 1871–1885, April–June 2023<br>**DOI:** 10.1109/TCC.2022.3169157 | Published in 2023 (within the 2021–2026 core window). Verified peer-reviewed IEEE Transactions article addressing DRL resource allocation and workload-time windows under SLA constraints. Marked as **Candidate Replacement** pending explicit user review. |
+| **P10 (Approved)** | N/A (Discovered as G2 replacement) | **Paper ID:** P10 (Group G2 Core)<br>**Candidate ID:** CAND-10b (Screening Provenance)<br>**Authors:** Xing Chen, Lijian Yang, Zheyi Chen, Geyong Min, Xianghan Zheng, Chunming Rong<br>**Title:** *Resource Allocation With Workload-Time Windows for Cloud-Based Software Services: A Deep Reinforcement Learning Approach*<br>**Venue:** *IEEE Transactions on Cloud Computing*, Vol. 11, No. 2, pp. 1871–1885, April–June 2023<br>**DOI:** 10.1109/TCC.2022.3169157 | Published in 2023 (within the 2021–2026 core window). Verified peer-reviewed IEEE Transactions article addressing DRL resource allocation and workload-time windows under SLA constraints. Formally approved as P10. |
 | **P06** | Listed as pages 1–8 in seed bibtex | **Venue:** *Proc. 9th International Workshop on Serverless Computing (WoSC@Middleware '23)*<br>**Pages:** 49–54<br>**Authors:** Mohak Chadha, Thandayuthapani Subramanian, Eishi Arima, Michael Gerndt, Martin Schulz, Osama Abboud<br>**DOI:** 10.1145/3631295.3631396 | Reconciled draft pagination (1–8) to official ACM proceedings pagination (**49–54**). Full roster of all 6 authors verified on ACM Digital Library. |
 | **P07** | Listed as pages 28–34 in workshop draft | **Venue:** *ACM SIGEnergy Energy Informatics Review (EIR)*, Vol. 4, No. 5, pp. 148–153, Dec. 2024<br>**DOI:** 10.1145/3727200.3727222 | Reconciled workshop internal pagination (28–34) to official archival journal publication pagination (**148–153**). |
 | **P24** | Listed as "2024", authors partially cited as "Hyunsoo Lee et al. (Taesik Jin...)" | **Year:** 2026<br>**Authors:** Hyunsoo Lee, Panggah Prabawa, Dae-Hyun Choi, Joongheon Kim<br>**Identifier:** arXiv:2607.03324 [eess.SY, cs.AI] | Official arXiv submission date is **July 2026** (`2607.xxxxx`). Full author roster verified on arXiv landing page. Preprint status maintained. |
@@ -81,18 +79,21 @@ For every candidate, the official publisher repository (ACM Digital Library, IEE
 ## 4. PRISMA 2020 Flow Reconciliation & Record Traceability
 
 ### 4.1 Traceability from Search Queries to Retrieved Records
-The 1,747 search hits recorded in `search_log.csv` represent raw keyword matches in publisher indexing engines. From these results, 57 formal candidate records were retrieved for title/abstract screening based on relevance ranking. Each record is tracked individually in [`retrieval_log.csv`](retrieval_log.csv) (`RET-01` through `RET-57`):
-- **SCH-01 (ACM DL, S1 - Carbon Schedulers):** 342 hits $\to$ 11 candidate records retrieved (P01, P03, P04, P05, P07, CAND-39, etc.)
-- **SCH-02 (IEEE Xplore, S1 - Carbon Computing):** 289 hits $\to$ 10 candidate records retrieved (P02, P06, CAND-40, etc.)
-- **SCH-03 (IEEE Xplore, S2 - RL Green Scheduling):** 178 hits $\to$ 12 candidate records retrieved (P10/F04, P15, P16, P18, P19, etc.)
-- **SCH-04 (ACM DL, S2 - RL Resource Allocation):** 114 hits $\to$ 6 candidate records retrieved (P17, P28, etc.)
-- **SCH-05 (ScienceDirect, S2 - RL Low-Carbon):** 96 hits $\to$ 4 candidate records retrieved (P20, P21, P22, etc.)
-- **SCH-06 (IEEE Xplore, S3 - DRL Energy & Cloud Cost):** 412 hits $\to$ 8 candidate records retrieved (P08, P09, P11, P12, P13, P14, CAND-10b Chen et al., etc.)
-- **SCH-07 (ACM DL, S4 - Carbon Intensity Forecast):** 87 hits $\to$ 3 candidate records retrieved (P25, P26, etc.)
-- **SCH-08 (IEEE/arXiv, S4 - Forecast Uncertainty):** 64 hits $\to$ 2 candidate records retrieved (P27, CAND-41, etc.)
-- **SCH-09 (ACM/NeurIPS, S5 - Simulators & Traces):** 122 hits $\to$ 3 candidate records retrieved (P29, P30, etc.)
-- **SCH-10 (Snowballing & Citations via Scholar):** 43 citation leads $\to$ 3 candidate records retrieved (P23, P24, CAND-38, etc.)
-- **Total Records Retrieved for Formal Screening:** **57 records**.
+The 1,747 search hits recorded in `search_log.csv` represent raw keyword matches in publisher indexing engines. From these results, exactly 57 formal candidate records were retrieved for title/abstract screening. Using [`literature_survey/retrieval_log.csv`](retrieval_log.csv) as the canonical source of truth, the per-search retrieval counts are reconciled as follows:
+
+| Search ID | Target Query Focus | Publisher / Engine | Raw Hits | Retrieved Records (`retrieval_log.csv`) | Candidate IDs & Unique/Duplicate Breakdown |
+|:---|:---|:---|:---:|:---:|:---|
+| **SCH-01** | S1: Carbon-aware cloud scheduling heuristics | ACM Digital Library | 342 | **11** | CAND-01 (P01), CAND-03 (P03), CAND-04 (P04), CAND-05 (P05), CAND-07 (P07), CAND-39 (Excluded); DUP-01, 02, 03, 04, 05 |
+| **SCH-02** | S1: Carbon-aware computing & datacenters | IEEE Xplore | 289 | **5** | CAND-02 (P02), CAND-06 (P06), CAND-40 (Excluded); DUP-06, 07 |
+| **SCH-03** | S2: RL green scheduling & renewable cloud | IEEE Xplore | 178 | **7** | CAND-10 (F04), CAND-15 (P15), CAND-16 (P16), CAND-18 (P18), CAND-19 (P19); DUP-08, 09 |
+| **SCH-04** | S2: RL resource allocation & carbon-efficient | ACM Digital Library | 114 | **2** | CAND-17 (P17); DUP-10 |
+| **SCH-05** | S2: DRL low-carbon datacenter scheduling | ScienceDirect (Elsevier) | 96 | **4** | CAND-20 (P20), CAND-21 (P21), CAND-22 (P22); DUP-11 |
+| **SCH-06** | S3: DRL cloud energy, cost, and QoS | IEEE Xplore | 412 | **8** | CAND-08 (P08), CAND-09 (P09), CAND-10b (P10), CAND-11 (P11), CAND-12 (P12), CAND-13 (P13), CAND-14 (P14); DUP-12 |
+| **SCH-07** | S4: Grid carbon intensity forecasting | ACM Digital Library | 87 | **3** | CAND-25 (P25), CAND-26 (P26); DUP-13 |
+| **SCH-08** | S4: Carbon forecast uncertainty & decarbonization | IEEE Xplore / arXiv | 64 | **2** | CAND-27 (P27), CAND-41 (Excluded) |
+| **SCH-09** | S5: Simulators, testbeds, and cloud traces | ACM DL / NeurIPS | 122 | **5** | CAND-28 (P28), CAND-29 (P29), CAND-30 (P30); DUP-14, 15 |
+| **SCH-10** | Snowballing, forward/backward citations | Google Scholar / Cross-Ref | 43 leads | **10** | CAND-23 (P23), CAND-24 (P24), CAND-31 (F01), CAND-32 (F02), CAND-33 (F03), CAND-34 (S01), CAND-35 (S02), CAND-36 (S03), CAND-37 (Excluded), CAND-38 (Excluded) |
+| **Total** | | | **1,747 hits** | **57 records** | **42 Unique Candidates + 15 Duplicates** |
 
 ### 4.2 Deduplication and Two-Stage Screening
 - **Duplicates Removed:** 15 records (`DUP-01` to `DUP-15` in `retrieval_log.csv`).
@@ -100,14 +101,14 @@ The 1,747 search hits recorded in `search_log.csv` represent raw keyword matches
 - **Excluded at Stage 1:** 5 records (`CAND-37` to `CAND-41`).
 - **Full-Text Assessed (Stage 2):** $42 - 5 = \mathbf{37\text{ records}}$.
 - **Excluded at Stage 2:** 0 records.
-- **Inclusion Breakdown:**
-  - **Confirmed Included Papers:** $\mathbf{36\text{ papers}}$ (29 Core [`P01`–`P09`, `P11`–`P30`] + 4 Foundational [`F01`–`F04`] + 3 Surveys [`S01`–`S03`]).
-  - **Pending Candidate Replacement:** $\mathbf{1\text{ paper}}$ (`P10` / `CAND-10b`, Chen et al. 2023 — DRAW).
-  - **Provisional Screening Outcome (If Approved):** $\mathbf{37\text{ papers}}$ (30 Core + 4 Foundational + 3 Surveys).
+- **Confirmed Included Papers:** $\mathbf{37\text{ papers}}$:
+  - **30 Core Surveyed Papers** (`P01` to `P30`, including approved `P10`)
+  - **4 Foundational Papers** (`F01` to `F04`)
+  - **3 Comprehensive Survey Papers** (`S01` to `S03`)
 
 ```text
 ========================================================================================
-PRISMA 2020 FLOW DIAGRAM — RECONCILED POST-STAGE B
+PRISMA 2020 FLOW DIAGRAM — RECONCILED POST-STAGE B (P10 APPROVED)
 ========================================================================================
 
 1. IDENTIFICATION STAGE:
@@ -142,33 +143,30 @@ PRISMA 2020 FLOW DIAGRAM — RECONCILED POST-STAGE B
    Full-Text Articles Assessed:                                     37 records
    Full-Text Excluded with Specific Reasons:                         0 records
    ─────────────────────────────────────────────────────────────────────────────────────
-   Current Confirmed Literature Survey Inventory:                   36 papers
-     ├── Confirmed Core Surveyed Papers (2021–2026, Groups G1–G5):  29 papers (P01–P09, P11–P30)
+   Total Verified Papers Included in Literature Survey:             37 papers
+     ├── Core Surveyed Papers (2021–2026, Groups G1–G5):            30 papers (P01–P30)
      ├── Foundational Baseline Literature (Pre-2021, Max 4):         4 papers (F01–F04)
      └── Comprehensive Survey / Review Literature:                   3 papers (S01–S03)
-   Pending Candidate Replacement:                                    1 paper
-     └── Candidate Replacement for G2 (P10 / CAND-10b, Chen et al.): 1 paper (Under Review)
-   ─────────────────────────────────────────────────────────────────────────────────────
-   Provisional Screening Total (Upon Approval of P10):              37 papers
 ========================================================================================
 ```
 
 **Mathematical Consistency Formula:**
 $$\text{Retrieved Records (57)} - \text{Duplicates (15)} = \text{Unique Screened (42)}$$
 $$\text{Unique Screened (42)} - \text{Stage 1 Excluded (5)} = \text{Full Text Assessed (37)}$$
-$$\text{Full Text Assessed (37)} = \mathbf{36\text{ Confirmed Included}} + \mathbf{1\text{ Pending Candidate Replacement (P10)}}$$
+$$\text{Full Text Assessed (37)} - \text{Stage 2 Excluded (0)} = \mathbf{37\text{ Confirmed Included Papers}}$$
+$$\text{Total Included (37)} = \text{Core (30)} + \text{Foundational (4)} + \text{Surveys (3)}$$
 
 ---
 
-## 5. Candidate P10 Full-Text Evaluation Verification (Chen et al., IEEE TCC 2023)
+## 5. Approved P10 Full-Text Evaluation Verification (Chen et al., IEEE TCC 2023)
 
 - **Full Citation:** Xing Chen, Lijian Yang, Zheyi Chen, Geyong Min, Xianghan Zheng, and Chunming Rong, *"Resource Allocation With Workload-Time Windows for Cloud-Based Software Services: A Deep Reinforcement Learning Approach"*, in *IEEE Transactions on Cloud Computing*, Vol. 11, No. 2, pp. 1871–1885, April–June 2023. DOI: [10.1109/TCC.2022.3169157](https://doi.org/10.1109/TCC.2022.3169157).
-- **Candidate Label:** `CAND-10b` / Proposed Replacement for `P10` in Group G2.
-- **Current Status:** **Candidate Replacement** (Held in pending status awaiting user authorization before extraction).
+- **Paper ID:** `P10` / Group G2 (Provenance Candidate ID: `CAND-10b`).
+- **Inclusion Status:** **Included (`Included = Yes`)** (Formally approved).
 
-### 5.1 Correction of Evaluation Setup Claim
-- **Corrected Claim:** The evaluation is conducted in a **trace-driven discrete-event simulation testbed** written in Java/Python (simulating cloud virtual machines and workload admission queues), driven by real-world trace request logs from the **WorldCup website access dataset** [Source: Sec. V-A, pp. 1878–1879]. It is **not** a live multi-tenant production cluster deployment.
-- **Trace Details:** The authors divide historical web access request streams into discrete *workload-time windows* ($W_t$) to evaluate the DRL agent's ability to handle non-stationary request bursts and temporal demand variations [Sec. V-A, p. 1878].
+### 5.1 Verification of Evaluation Setup
+- **Evaluation Environment:** The evaluation is conducted in a **trace-driven discrete-event simulation testbed** written in Java/Python (simulating cloud virtual machines, queue latencies, and provisioning mechanisms), driven by empirical request logs from the **WorldCup website access dataset** [Source: Sec. V-A, pp. 1878–1879]. It is **not** a live multi-tenant production cluster deployment.
+- **Trace Details:** The authors segment historical web access request streams into discrete *workload-time windows* ($W_t$) to evaluate the DRL agent's ability to handle non-stationary request bursts and temporal demand variations [Sec. V-A, p. 1878].
 
 ### 5.2 Reinforcement Learning Formulation (MDP)
 - **State ($S_t$):** The state vector captures: (1) current virtual machine resource utilization (CPU, memory); (2) average queuing latency and backlog of pending requests; and (3) predicted request intensity for the upcoming workload-time window ($W_t$) derived from a QoS prediction module [Source: Sec. IV-A, pp. 1874–1875].

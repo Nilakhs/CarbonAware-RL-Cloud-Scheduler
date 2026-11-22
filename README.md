@@ -1,8 +1,8 @@
 # Carbon-Aware Reinforcement Learning (RL) Scheduler for Dynamic Cloud Workloads
 
 [![Survey Standard](https://img.shields.io/badge/Methodology-Kitchenham%20%2F%20PRISMA%202020-blue.svg)](#8-systematic-literature-survey-methodology)
-[![Progress](https://img.shields.io/badge/SLR%20Progress-9%20Core%20%2B%201%20Foundational%20Extracted-orange.svg)](#10-current-research-progress)
-[![Inventory](https://img.shields.io/badge/Inventory-36%20Confirmed%20%2B%201%20Pending-informational.svg)](#9-five-literature-groups)
+[![Progress](https://img.shields.io/badge/SLR%20Progress-14%2F30%20Core%20Papers-orange.svg)](#10-current-research-progress)
+[![Group Status](https://img.shields.io/badge/G1%20%26%20G2%20Status-Complete%20(14%2F14)-brightgreen.svg)](#9-five-literature-groups)
 [![Status](https://img.shields.io/badge/Project%20Stage-Literature%20Review%20%26%20Scoping-yellow.svg)](#10-current-research-progress)
 
 A systematic research project and experimental investigation into **Carbon-Aware Reinforcement Learning (RL) Schedulers for Dynamic Cloud Workloads**, conducted as part of a college Cloud Computing course project.
@@ -118,7 +118,7 @@ This project strictly follows established guidelines for systematic literature r
 | Group | Focus Area | Core Target | Status | Highlights / Key Citations |
 |:---:|:---|:---:|:---:|:---|
 | **G1** | Carbon-Aware Scheduling **without** RL | 7 | **COMPLETE (7/7 Confirmed)** | *Let's Wait Awhile* (P01), Google Fleet (P02), *Carbon Explorer* (P03), *Ecovisor* (P04), *CarbonScaler* (P05), *GreenCourier* (P06), *FTL Meta-Algorithm* (P07) |
-| **G2** | RL / DRL for Cloud Energy, Cost, and QoS | 7 | **IN PROGRESS (6 Confirmed + 1 Pending)** | *BayesDDQN* (P08), *GNN-PPO Workflow* (P09); P10 candidate replacement (DRAW) pending user review |
+| **G2** | RL / DRL for Cloud Energy, Cost, and QoS | 7 | **COMPLETE (7/7)** | *BayesDDQN* (P08), *GNN-PPO Workflow* (P09), *DRAW* (P10), *Actor-Critic* (P11), *ADVMC* (P12), *DeepEE PADQN* (P13), *Federated DRL* (P14) |
 | **G3** | RL / DRL for **Carbon-Aware** Scheduling (Core) | 10 | **PLANNED (10 Confirmed)** | Core focus: P15–P24 covering multi-agent, actor-critic, and hierarchical carbon schedulers |
 | **G4** | Carbon-Intensity Data and Forecasting | 3 | **PLANNED (3 Confirmed)** | P25 (*CarbonCast*), P26 (*DACF*), P27 (*HotCarbon '24* conformal prediction) |
 | **G5** | Simulators, Datasets, and Workload Traces | 3 | **PLANNED (3 Confirmed)** | P28 (*SustainGym*), P29 (*Vessim*), P30 (*Alibaba 2021 trace*) |
@@ -131,21 +131,21 @@ This project strictly follows established guidelines for systematic literature r
 
 ```text
 Systematic Literature Review Progress:
-[████████████░░░░░░░░░░░░░░░░░░░░] 33% Core Target (9 Core + 1 Foundational Extracted; P10 Pending)
+[████████████████████░░░░░░░░░░░░] 47% Core Target (14/30 Core + 1 Foundational Extracted)
 
-G1: Non-RL Carbon Schedulers   [████████████████████] 100% (7/7 extracted)
-G2: RL for Energy/Cost/QoS     [██████░░░░░░░░░░░░░░]  29% (2/7 extracted; P10 candidate replacement pending)
-G3: RL for Carbon Schedulers   [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 10 papers)
-G4: Data and Forecasting       [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers)
-G5: Simulators and Traces      [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers)
+G1: Non-RL Carbon Schedulers   [████████████████████] 100% (7/7 extracted: P01–P07)
+G2: RL for Energy/Cost/QoS     [████████████████████] 100% (7/7 extracted: P08–P14)
+G3: RL for Carbon Schedulers   [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 10 papers: P15–P24)
+G4: Data and Forecasting       [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers: P25–P27)
+G5: Simulators and Traces      [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers: P28–P30)
 ```
 
 - **Completed Deliverables:**
   - Full SLR protocol, search log, retrieval log (`retrieval_log.csv`), and screening logs mathematically reconciled.
-  - Standardized paper extraction notes for `P01` through `P09` and foundational paper `F04`.
+  - Standardized paper extraction notes for `P01` through `P14` and foundational paper `F04`.
   - Comprehensive metadata audit verifying DOIs, proceedings pagination, and author rosters.
   - Pre-implementation research scoping documents (`problem_statement.md`, `existing_approaches.md`, `candidate_research_gaps.md`).
-- **Next Milestone:** Approval of `P10` replacement candidate and extraction of Group G2 (`P11`–`P14`) and Group G3 (`P15`–`P24`).
+- **Next Milestone:** Controlled extraction of Group G3 (`P15`–`P24`, Core Carbon-Aware RL Schedulers).
 
 ---
 
@@ -168,7 +168,7 @@ CarbonAware-RL-Cloud-Scheduler/
 │   ├── README.md                      # Guide to survey progress, group distribution & workflow
 │   ├── Literature_Survey_Report.md    # Living synthesis report across all 11 standard sections
 │   ├── Audit_Report.md                # Phase 2.5 audit and reconciliation findings
-│   ├── papers_master.csv              # Master database (36 confirmed included + 1 pending candidate)
+│   ├── papers_master.csv              # Master database (37 confirmed included papers with QA scores)
 │   ├── retrieval_log.csv              # Enumeration of all 57 retrieved records (RET-01 to RET-57)
 │   ├── search_log.csv                 # Detailed audit trail of all database queries & hits
 │   ├── screening_log.csv              # Two-stage PRISMA screening decisions and exclusion reasons

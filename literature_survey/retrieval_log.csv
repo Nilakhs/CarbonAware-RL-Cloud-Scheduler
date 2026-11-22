@@ -17,7 +17,7 @@ RET-15,CAND-08,SCH-06,"A Reinforcement Learning Based Framework for Holistic Ene
 RET-16,CAND-09,SCH-06,"Learning to Optimize Workflow Scheduling for an Edge-Cloud Computing Environment",10.1109/TCC.2024.3408006,Unique,None,Screened (Stage 1),Included (P09)
 RET-17,CAND-10,SCH-03,"A Deep Reinforcement Learning Approach for Green Task Scheduling in Cloud Computing With Energy and Cost Constraints",10.1109/TCC.2019.2910078,Unique,None,Screened (Stage 1),Included (F04)
 RET-18,DUP-08,SCH-03,"A Deep Reinforcement Learning Approach for Green Task Scheduling in Cloud Computing (Preprint/Index Duplicate)",10.1109/TCC.2019.2910078,Duplicate,CAND-10,Excluded (Deduplication),Removed as Duplicate
-RET-19,CAND-10b,SCH-06,"Resource Allocation With Workload-Time Windows for Cloud-Based Software Services: A Deep Reinforcement Learning Approach",10.1109/TCC.2022.3169157,Unique,None,Screened (Stage 1),Candidate Replacement (P10)
+RET-19,CAND-10b,SCH-06,"Resource Allocation With Workload-Time Windows for Cloud-Based Software Services: A Deep Reinforcement Learning Approach",10.1109/TCC.2022.3169157,Unique,None,Screened (Stage 1),Included (P10)
 RET-20,CAND-11,SCH-06,"Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic Deep Reinforcement Learning",10.1109/TPDS.2021.3132422,Unique,None,Screened (Stage 1),Included (P11)
 RET-21,DUP-12,SCH-06,"Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic DRL (arXiv Preprint)",10.48550/arXiv.2112.01234,Duplicate,CAND-11,Excluded (Deduplication),Removed as Duplicate
 RET-22,CAND-12,SCH-06,"Adaptive DRL-Based Virtual Machine Consolidation in Energy-Efficient Cloud Data Center",10.1109/TPDS.2022.3147851,Unique,None,Screened (Stage 1),Included (P12)
