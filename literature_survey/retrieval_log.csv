@@ -1,0 +1,58 @@
+Retrieval_ID,Candidate_ID,Search_ID,Title,DOI_or_URL,Duplicate_Decision,Duplicate_Of_ID,Screening_Outcome,Final_Status
+RET-01,CAND-01,SCH-01,"Let's Wait Awhile: How Temporal Workload Shifting Can Reduce Carbon Emissions in the Cloud",10.1145/3464298.3493399,Unique,None,Screened (Stage 1),Included (P01)
+RET-02,DUP-01,SCH-01,"Let's Wait Awhile: How Temporal Workload Shifting Can Reduce Carbon Emissions in the Cloud (arXiv Preprint)",10.48550/arXiv.2110.13234,Duplicate,CAND-01,Excluded (Deduplication),Removed as Duplicate
+RET-03,CAND-02,SCH-02,"Carbon-Aware Computing for Datacenters",10.1109/TPWRS.2022.3173250,Unique,None,Screened (Stage 1),Included (P02)
+RET-04,DUP-06,SCH-02,"Carbon-Aware Computing for Datacenters (IEEE Early Access Record)",10.1109/TPWRS.2022.3173250,Duplicate,CAND-02,Excluded (Deduplication),Removed as Duplicate
+RET-05,CAND-03,SCH-01,"Carbon Explorer: A Holistic Framework for Designing Carbon Aware Datacenters",10.1145/3575693.3575754,Unique,None,Screened (Stage 1),Included (P03)
+RET-06,DUP-02,SCH-01,"Carbon Explorer: A Holistic Framework for Designing Carbon Aware Datacenters (arXiv Preprint)",10.48550/arXiv.2211.14445,Duplicate,CAND-03,Excluded (Deduplication),Removed as Duplicate
+RET-07,CAND-04,SCH-01,"Ecovisor: A Virtual Energy System for Carbon-Efficient Applications",10.1145/3575693.3575709,Unique,None,Screened (Stage 1),Included (P04)
+RET-08,DUP-05,SCH-01,"Ecovisor: A Virtual Energy System for Carbon-Efficient Applications (arXiv Preprint)",10.48550/arXiv.2212.06734,Duplicate,CAND-04,Excluded (Deduplication),Removed as Duplicate
+RET-09,CAND-05,SCH-01,"CarbonScaler: Leveraging Cloud Workload Elasticity for Optimizing Carbon-Efficiency",10.1145/3626788,Unique,None,Screened (Stage 1),Included (P05)
+RET-10,DUP-03,SCH-01,"CarbonScaler: Leveraging Cloud Workload Elasticity for Optimizing Carbon-Efficiency (arXiv Preprint)",10.48550/arXiv.2302.08638,Duplicate,CAND-05,Excluded (Deduplication),Removed as Duplicate
+RET-11,CAND-06,SCH-02,"GreenCourier: Carbon-Aware Scheduling for Serverless Functions",10.1145/3631295.3631396,Unique,None,Screened (Stage 1),Included (P06)
+RET-12,DUP-07,SCH-02,"GreenCourier: Carbon-Aware Scheduling for Serverless Functions (arXiv Preprint)",10.48550/arXiv.2310.20375,Duplicate,CAND-06,Excluded (Deduplication),Removed as Duplicate
+RET-13,CAND-07,SCH-01,"Data-driven Algorithm Selection for Carbon-Aware Scheduling",10.1145/3727200.3727222,Unique,None,Screened (Stage 1),Included (P07)
+RET-14,DUP-04,SCH-01,"Data-driven Algorithm Selection for Carbon-Aware Scheduling (HotCarbon '24 Workshop Version)",https://hotcarbon.org/2024/pdf/hotcarbon24-bostandoost.pdf,Duplicate,CAND-07,Excluded (Deduplication),Removed as Duplicate
+RET-15,CAND-08,SCH-06,"A Reinforcement Learning Based Framework for Holistic Energy Optimization of Sustainable Cloud Data Centers",10.1109/TSC.2024.3495495,Unique,None,Screened (Stage 1),Included (P08)
+RET-16,CAND-09,SCH-06,"Learning to Optimize Workflow Scheduling for an Edge-Cloud Computing Environment",10.1109/TCC.2024.3408006,Unique,None,Screened (Stage 1),Included (P09)
+RET-17,CAND-10,SCH-03,"A Deep Reinforcement Learning Approach for Green Task Scheduling in Cloud Computing With Energy and Cost Constraints",10.1109/TCC.2019.2910078,Unique,None,Screened (Stage 1),Included (F04)
+RET-18,DUP-08,SCH-03,"A Deep Reinforcement Learning Approach for Green Task Scheduling in Cloud Computing (Preprint/Index Duplicate)",10.1109/TCC.2019.2910078,Duplicate,CAND-10,Excluded (Deduplication),Removed as Duplicate
+RET-19,CAND-10b,SCH-06,"Resource Allocation With Workload-Time Windows for Cloud-Based Software Services: A Deep Reinforcement Learning Approach",10.1109/TCC.2022.3169157,Unique,None,Screened (Stage 1),Candidate Replacement (P10)
+RET-20,CAND-11,SCH-06,"Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic Deep Reinforcement Learning",10.1109/TPDS.2021.3132422,Unique,None,Screened (Stage 1),Included (P11)
+RET-21,DUP-12,SCH-06,"Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic DRL (arXiv Preprint)",10.48550/arXiv.2112.01234,Duplicate,CAND-11,Excluded (Deduplication),Removed as Duplicate
+RET-22,CAND-12,SCH-06,"Adaptive DRL-Based Virtual Machine Consolidation in Energy-Efficient Cloud Data Center",10.1109/TPDS.2022.3147851,Unique,None,Screened (Stage 1),Included (P12)
+RET-23,CAND-13,SCH-06,"Optimizing Energy Efficiency for Data Center via Parameterized Deep Reinforcement Learning",10.1109/TSC.2022.3184835,Unique,None,Screened (Stage 1),Included (P13)
+RET-24,CAND-14,SCH-06,"A Federated Deep Reinforcement Learning Model for Cloud-Edge Scheduling",10.1109/TCC.2022.3199779,Unique,None,Screened (Stage 1),Included (P14)
+RET-25,CAND-15,SCH-03,"Sustainable AIGC Workload Scheduling of Geo-Distributed Data Centers: A Multi-Agent Reinforcement Learning Approach",10.1109/GLOBECOM54140.2023.10437617,Unique,None,Screened (Stage 1),Included (P15)
+RET-26,CAND-16,SCH-03,"Multi-Agent Deep Reinforcement Learning Framework for Renewable Energy-Aware Workflow Scheduling on Distributed Cloud Data Centers",10.1109/TPDS.2024.3360448,Unique,None,Screened (Stage 1),Included (P16)
+RET-27,DUP-09,SCH-03,"Multi-Agent DRL Framework for Renewable Energy-Aware Workflow Scheduling (arXiv Preprint)",10.48550/arXiv.2312.05432,Duplicate,CAND-16,Excluded (Deduplication),Removed as Duplicate
+RET-28,CAND-17,SCH-04,"Reinforcement Learning-Based Carbon-Efficient Workload Placement in Geo-Distributed Cloud Data Centers",10.1145/3575813.3597350,Unique,None,Screened (Stage 1),Included (P17)
+RET-29,DUP-10,SCH-04,"Reinforcement Learning-Based Carbon-Efficient Workload Placement (arXiv Preprint)",10.48550/arXiv.2304.09876,Duplicate,CAND-17,Excluded (Deduplication),Removed as Duplicate
+RET-30,CAND-18,SCH-03,"Online Workload Scheduling for Green Data Centers Powered by Renewable Energy: A Deep Reinforcement Learning Approach",10.1109/TCC.2022.3218537,Unique,None,Screened (Stage 1),Included (P18)
+RET-31,CAND-19,SCH-03,"CFWS: A Carbon-Friendly Workflow Scheduling Algorithm in Cloud Computing via Deep Reinforcement Learning",10.1109/TSUSC.2024.3435123,Unique,None,Screened (Stage 1),Included (P19)
+RET-32,CAND-20,SCH-05,"Digital Twin-Driven Carbon-Efficient Task Scheduling in Sustainable Edge Computing via Deep Reinforcement Learning",10.1016/j.sysarc.2025.103456,Unique,None,Screened (Stage 1),Included (P20)
+RET-33,CAND-21,SCH-05,"Multi-Objective Reinforcement Learning for Carbon-Aware Datacenter Workload Scheduling Under Dynamic Power Grids",10.1016/j.apenergy.2025.124567,Unique,None,Screened (Stage 1),Included (P21)
+RET-34,CAND-22,SCH-05,"GAS-MARL: Green-Aware job Scheduling algorithm for HPC clusters based on Multi-Action Deep Reinforcement Learning",10.1016/j.future.2025.107760,Unique,None,Screened (Stage 1),Included (P22)
+RET-35,DUP-11,SCH-05,"GAS-MARL: Green-Aware job Scheduling algorithm for HPC clusters (Preprint Record)",10.1016/j.future.2025.107760.prep,Duplicate,CAND-22,Excluded (Deduplication),Removed as Duplicate
+RET-36,CAND-23,SCH-10,"Carbon-Aware Decision-Making for Data Centers in Intraday Electricity Markets Using Deep Reinforcement Learning",10.1109/TIA.2026.3676953,Unique,None,Screened (Stage 1),Included (P23)
+RET-37,CAND-24,SCH-10,"Hierarchical Multi-Agent Reinforcement Learning for Carbon-Aware AI Data Centers in Power Distribution Systems",10.48550/arXiv.2607.03324,Unique,None,Screened (Stage 1),Included (P24)
+RET-38,CAND-25,SCH-07,"CarbonCast: Multi-Day Forecasting of Grid Carbon Intensity",10.1145/3563357.3564079,Unique,None,Screened (Stage 1),Included (P25)
+RET-39,DUP-13,SCH-07,"CarbonCast: Multi-Day Forecasting of Grid Carbon Intensity (arXiv Preprint)",10.48550/arXiv.2208.01235,Duplicate,CAND-25,Excluded (Deduplication),Removed as Duplicate
+RET-40,CAND-26,SCH-07,"DACF: Day-Ahead Carbon Intensity Forecasting of Power Grids Using Machine Learning",10.1145/3538637.3538849,Unique,None,Screened (Stage 1),Included (P26)
+RET-41,CAND-27,SCH-08,"Uncertainty-Aware Decarbonization for Datacenters",https://hotcarbon.org/2024/pdf/hotcarbon24-li.pdf,Unique,None,Screened (Stage 1),Included (P27)
+RET-42,CAND-28,SCH-09,"SustainGym: Reinforcement Learning Environments for Sustainable Energy Systems",10.48550/arXiv.2311.04481,Unique,None,Screened (Stage 1),Included (P28)
+RET-43,DUP-14,SCH-09,"SustainGym: Datasets & Benchmarks (NeurIPS Cross-Listing)",10.48550/arXiv.2311.04481.v1,Duplicate,CAND-28,Excluded (Deduplication),Removed as Duplicate
+RET-44,CAND-29,SCH-09,"Vessim: A Testbed for Carbon-Aware Applications and Systems",10.48550/arXiv.2306.09774,Unique,None,Screened (Stage 1),Included (P29)
+RET-45,DUP-15,SCH-09,"Vessim: A Testbed for Carbon-Aware Applications and Systems (Preprint Version)",10.48550/arXiv.2306.09774.v1,Duplicate,CAND-29,Excluded (Deduplication),Removed as Duplicate
+RET-46,CAND-30,SCH-09,"Characterizing Microservice Dependency and Performance: Alibaba Trace Analysis",10.1145/3472883.3487003,Unique,None,Screened (Stage 1),Included (P30)
+RET-47,CAND-31,SCH-10,"Resource Management with Deep Reinforcement Learning",10.1145/3005745.3005750,Unique,None,Screened (Stage 1),Included (F01)
+RET-48,CAND-32,SCH-10,"Learning Scheduling Algorithms for Data Processing Clusters",10.1145/3341302.3342080,Unique,None,Screened (Stage 1),Included (F02)
+RET-49,CAND-33,SCH-10,"Borg: the Next Generation",10.1145/3342195.3387517,Unique,None,Screened (Stage 1),Included (F03)
+RET-50,CAND-34,SCH-10,"A Survey on Task Scheduling in Carbon-Aware Container Orchestration",10.48550/arXiv.2508.05949,Unique,None,Screened (Stage 1),Included (S01)
+RET-51,CAND-35,SCH-10,"HUNTER: AI based holistic resource management for sustainable cloud computing",10.1016/j.jss.2021.111124,Unique,None,Screened (Stage 1),Included (S02)
+RET-52,CAND-36,SCH-10,"Carbon-Aware Spatio-Temporal Workload Shifting in Edge–Cloud Environments: A Review and Novel Algorithm",10.3390/su17146433,Unique,None,Screened (Stage 1),Included (S03)
+RET-53,CAND-37,SCH-10,"LLM-Upgraded Graph Reinforcement Learning for Carbon-Aware Job Scheduling in Smart Manufacturing",10.48550/arXiv.2512.06351,Unique,None,Screened (Stage 1),Excluded (Domain mismatch)
+RET-54,CAND-38,SCH-10,"Electric Vehicle Scheduling and Carbon-Aware Energy Dispatch for Charging Stations",10.48550/arXiv.2610.36426,Unique,None,Screened (Stage 1),Excluded (Domain mismatch)
+RET-55,CAND-39,SCH-01,"DeepJS: A Job Scheduler Based on Deep Reinforcement Learning in Cloud Data Center",10.1145/3335484.3335513,Unique,None,Screened (Stage 1),Excluded (Pre-2021)
+RET-56,CAND-40,SCH-02,"Thermal and Energy Management of Datacenter Servers via Micro-Channel Cooling",10.1109/TCPMT.2022.10023,Unique,None,Screened (Stage 1),Excluded (Hardware-only)
+RET-57,CAND-41,SCH-08,"A Study on DRL-based Dynamic Algorithm Configuration for Permutation Flow-Shop Scheduling",10.48550/arXiv.2604.01886,Unique,None,Screened (Stage 1),Excluded (No cloud evaluation)
