@@ -1,9 +1,9 @@
 # Carbon-Aware Reinforcement Learning (RL) Scheduler for Dynamic Cloud Workloads
 
 [![Survey Standard](https://img.shields.io/badge/Methodology-Kitchenham%20%2F%20PRISMA%202020-blue.svg)](#8-systematic-literature-survey-methodology)
-[![Progress](https://img.shields.io/badge/SLR%20Progress-16%2F30%20Core%20Papers-orange.svg)](#10-current-research-progress)
-[![Group Status](https://img.shields.io/badge/Status-G1%20%26%20G2%20Complete%20%7C%20G3%20In%20Progress-brightgreen.svg)](#9-five-literature-groups)
-[![Status](https://img.shields.io/badge/Project%20Stage-Literature%20Review%20%26%20Scoping-yellow.svg)](#10-current-research-progress)
+[![Progress](https://img.shields.io/badge/SLR%20Progress-30%2F30%20Core%20Papers%20Complete-brightgreen.svg)](#10-current-research-progress)
+[![Group Status](https://img.shields.io/badge/Status-All%20Groups%20G1--G5%20Complete-brightgreen.svg)](#9-five-literature-groups)
+[![Status](https://img.shields.io/badge/Project%20Stage-Literature%20Review%20Complete-brightgreen.svg)](#10-current-research-progress)
 
 A systematic research project and experimental investigation into **Carbon-Aware Reinforcement Learning (RL) Schedulers for Dynamic Cloud Workloads**, conducted as part of a college Cloud Computing course project.
 
@@ -108,7 +108,7 @@ This project strictly follows established guidelines for systematic literature r
 - **PRISMA 2020 Statement (Page et al., 2021):** Traceable four-phase flow diagram (Identification $\to$ Retrieval $\to$ Screening $\to$ Inclusion).
 - **Wohlin (2014) Snowballing:** Backward reference checking and forward Google Scholar citation tracking.
 
-*Full review protocol:* [`docs/research_methodology.md`](docs/research_methodology.md)  
+*Full review protocol:* [`docs/research_methodology.md`](docs/research_methodology.md)
 *Phase 2.5 Audit & Reconciliation Report:* [`literature_survey/Audit_Report.md`](literature_survey/Audit_Report.md)
 
 ---
@@ -131,21 +131,23 @@ This project strictly follows established guidelines for systematic literature r
 
 ```text
 Systematic Literature Review Progress:
-[█████████████████████░░░░░░░░░░░] 53% Core Target (16/30 Core + 1 Foundational Extracted)
+[████████████████████████████████] 100% Core Target Complete (30/30 Core + 1 Foundational Extracted)
 
 G1: Non-RL Carbon Schedulers   [████████████████████] 100% (7/7 extracted: P01–P07)
 G2: RL for Energy/Cost/QoS     [████████████████████] 100% (7/7 extracted: P08–P14)
-G3: RL for Carbon Schedulers   [████░░░░░░░░░░░░░░░░]  20% (2/10 extracted: P15, P16; Target: P15–P24)
-G4: Data and Forecasting       [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers: P25–P27)
-G5: Simulators and Traces      [░░░░░░░░░░░░░░░░░░░░]   0% (Target: 3 papers: P28–P30)
+G3: RL for Carbon Schedulers   [████████████████████] 100% (10/10 extracted: P15–P24)
+G4: Data and Forecasting       [████████████████████] 100% (3/3 extracted: P25–P27)
+G5: Simulators and Traces      [████████████████████] 100% (3/3 extracted: P28–P30)
 ```
 
 - **Completed Deliverables:**
   - Full SLR protocol, search log, retrieval log (`retrieval_log.csv`), and screening logs mathematically reconciled.
-  - Standardized paper extraction notes for `P01` through `P16` and foundational paper `F04`.
-  - Comprehensive metadata audit verifying DOIs, proceedings pagination, and author rosters.
+  - Standardized, primary-source grounded extraction notes for all 30 core papers (`P01` through `P30`) and foundational paper `F04`.
+  - Comprehensive metadata and strict dynamic grid-carbon QA audit verifying DOIs, publisher proceedings, and 8-point rubric scores across all 30 papers.
+  - Standardized high-fidelity PDF-to-Markdown extraction toolchain (`literature_survey/PDF_TO_MARKDOWN_WORKFLOW.md`, `PAPER_ANALYSIS_PROMPT.md`, `scripts/pdf_to_markdown.py`).
+  - Full systematic synthesis report (`literature_survey/Literature_Survey_Report.md`) with cross-group taxonomy and comparative analysis.
   - Pre-implementation research scoping documents (`problem_statement.md`, `existing_approaches.md`, `candidate_research_gaps.md`).
-- **Next Milestone:** Controlled extraction of Group G3 (`P17`–`P24`, Core Carbon-Aware RL Schedulers).
+- **Next Milestone:** Phase 3 — Prototype Design and Reinforcement Learning Scheduler Implementation.
 
 ---
 
